@@ -1,8 +1,9 @@
+# st_team6
+
 #==================#
         Info
 #==================#
 
-# st_team6
 Shark Tank Project for our team
 
 Please log all changes in the README. Log with the following format:
