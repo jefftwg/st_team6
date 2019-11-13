@@ -1,3 +1,7 @@
+#==================#
+        Info
+#==================#
+
 # st_team6
 Shark Tank Project for our team
 
@@ -16,3 +20,9 @@ UPDATE 1.1 - Changed line in read me, added more detail
 UPDATE 2.1 - New READ ME
 
 ^^ These are just samples. Currently on version 1.0
+
+
+
+#====================#
+        Updates
+#====================#
