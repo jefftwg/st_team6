@@ -14,16 +14,16 @@ Also log all pushes to live
 
 Updates should look like this:
 
-UPDATE 1.0 - Initial README
+        UPDATE 1.0 - Initial README
 
-UPDATE 1.1 - Changed line in read me, added more detail
+        UPDATE 1.1 - Changed line in read me, added more detail
 
-UPDATE 2.1 - New READ ME
+        UPDATE 2.1 - New READ ME
 
 ^^ These are just samples. Currently on version 1.0
 
 
 
-#====================#
-        Updates
-#====================#
+#==================#
+      Updates
+#==================#
