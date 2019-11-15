@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--font-main: 'Oswald', sans-serif;
+	--font-sub: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+	font-family: var(--font-main);
+}
+
+span {
+	font-family: var(--font-sub);
+}
+
+a {
+	text-decoration: none;
+	color: #aaa;
+}
+
+.link--active {
+	color: #eee;
+}
+
+/* Navbar */
+
+header {
+	font-family: var(--font-main);
+	width: 100vw;
+	height: 10vh;
+	min-height: 80px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-right: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	width: 450px;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: auto;
+}
