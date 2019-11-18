@@ -11,6 +11,7 @@
 
 h1 {
 	font-family: var(--font-main);
+	font-weight: 700;
 }
 
 span {
@@ -19,11 +20,10 @@ span {
 
 a {
 	text-decoration: none;
-	color: #aaa;
 }
 
 .link--active {
-	color: #eee;
+	opacity: 1;
 }
 
 /* Navbar */
@@ -41,6 +41,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 999999;
 }
 
 nav ul {
@@ -49,5 +50,32 @@ nav ul {
 	width: 450px;
 	justify-content: space-between;
 	align-items: center;
-	margin-left: auto;
+}
+
+nav a {
+	transition: all ease 150ms;
+	position: relative;
+	color: #000;
+	opacity: 0.8;
+}
+
+nav a:hover {
+	transform: scale(1.1);
+}
+
+nav a::after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	transform: scaleX(0);
+	transform-origin: center center;
+	transition: all ease 150ms;
+}
+
+nav a:hover::after {
+	transform: scaleX(1);
 }

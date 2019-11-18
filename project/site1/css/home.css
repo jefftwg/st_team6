@@ -2,15 +2,16 @@
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-	background-color: #020202;
+	background-color: #ddd;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	position: relative;
 }
 
 .hero-text {
 	width: 50vw;
 	height: 100vh;
-	color: #fff;
+	color: #000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -23,13 +24,16 @@
 
 .hero-text h1 {
 	font-size: 5rem;
+	letter-spacing: 5px;
 }
 
 .hero-text span {
 	font-size: 3rem;
+	font-weight: 100;
+	opacity: 0.9;
 }
 
 .hero-pic {
 	height: 100vh;
-	transform: scale(1.1);
+	opacity: 1;
 }
