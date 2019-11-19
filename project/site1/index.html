@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FilTier</title>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,700|Oswald:400,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Oswald:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
@@ -14,21 +15,26 @@
         <nav>
             <ul>
                 <a href="#" class="link--active">HOME</a>
-                <a href="#">OUR MISSION</a>
-                <a href="#">PRODUCTS</a>
-                <a href="#">SERVICE & SUPPORT</a>
+                <a href="#" onmouseover="addHoverEffect(this)" onmouseleave="removeHoverEffect(this)">OUR MISSION</a>
+                <a href="#" onmouseover="addHoverEffect(this)" onmouseleave="removeHoverEffect(this)">PRODUCTS</a>
+                <a href="#" onmouseover="addHoverEffect(this)" onmouseleave="removeHoverEffect(this)">SERVICE & SUPPORT</a>
             </ul>
         </nav>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-text">
-            <div>
-                <h1>FilTier</h1>
-                <span>Embrace the purified future.</span>
+
+    <div class="wrapper">
+        <section class="hero-section">
+            <div class="hero-text">
+                <div>
+                    <h1 class="main-text">FilTier</h1>
+                    <span class="sub-text">Embrace the purified future.</span>
+                </div>
             </div>
-        </div>
-        <img src="img/asd.jpg" alt="hero-pic" class="hero-pic">
-    </section>
+            <div class="hero-pic"></div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
 </body>
-</html>+
+</html>

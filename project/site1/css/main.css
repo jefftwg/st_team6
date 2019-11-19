@@ -22,17 +22,12 @@ a {
 	text-decoration: none;
 }
 
-.link--active {
-	opacity: 1;
-}
-
 /* Navbar */
 
 header {
 	font-family: var(--font-main);
-	width: 100vw;
-	height: 10vh;
-	min-height: 80px;
+	height: 100vh;
+	min-width: 100px;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
@@ -46,21 +41,37 @@ header {
 
 nav ul {
 	display: flex;
-	flex-direction: row;
-	width: 450px;
+	flex-direction: column;
+	height: 30vh;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
+	padding-left: 2rem;
+	position: relative;
+}
+
+nav ul::before {
+	content: '';
+	height: calc(30vh + 40px);
+	width: 5px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #000;
+	z-index: 10;
+	opacity: 0.5;
 }
 
 nav a {
 	transition: all ease 150ms;
 	position: relative;
 	color: #000;
-	opacity: 0.8;
+	opacity: 0.4;
 }
 
 nav a:hover {
-	transform: scale(1.1);
+	transform: scale(1);
+	opacity: 1;
 }
 
 nav a::after {
@@ -78,4 +89,22 @@ nav a::after {
 
 nav a:hover::after {
 	transform: scaleX(1);
+}
+
+.link--active {
+	opacity: 0.8;
+	position: relative;
+}
+
+.link--active::before {
+	content: '';
+	height: calc((30vh + 40px) / 4);
+	width: 5px;
+	position: absolute;
+	left: -2rem;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #000;
+	z-index: 10;
+	opacity: 1;
 }
