@@ -7,24 +7,23 @@
     <title>FilTier</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Oswald:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <a href="#" class="link--active">HOME</a>
-                <a href="#" onmouseover="addHoverEffect(this)" onmouseleave="removeHoverEffect(this)">OUR MISSION</a>
-                <a href="#" onmouseover="addHoverEffect(this)" onmouseleave="removeHoverEffect(this)">PRODUCTS</a>
-                <a href="#" onmouseover="addHoverEffect(this)" onmouseleave="removeHoverEffect(this)">SERVICE & SUPPORT</a>
+                <a href="#hero-section" onmouseover="addHoverEffect(this)" onmouseleave="removeHoverEffect(this)" onclick="changeClass(this)" data-active="true" class="link--active">HOME</a>
+                <a href="#mission" onmouseover="addHoverEffect(this)" onmouseleave="removeHoverEffect(this)" onclick="changeClass(this)" data-active="false">OUR MISSION</a>
+                <a href="#idea" onmouseover="addHoverEffect(this)" onmouseleave="removeHoverEffect(this)" onclick="changeClass(this)" data-active="false">IDEA</a>
+                <a href="#service" onmouseover="addHoverEffect(this)" onmouseleave="removeHoverEffect(this)" onclick="changeClass(this)" data-active="false">SERVICE & SUPPORT</a>
             </ul>
         </nav>
     </header>
 
-
     <div class="wrapper">
-        <section class="hero-section">
+        <section id="hero-section">
             <div class="hero-text">
                 <div>
                     <h1 class="main-text">FilTier</h1>
@@ -33,6 +32,12 @@
             </div>
             <div class="hero-pic"></div>
         </section>
+
+        <section id="mission"></section>
+
+        <section id="idea"></section>
+
+        <section id="service"></section>
     </div>
 
     <script src="main.js"></script>
