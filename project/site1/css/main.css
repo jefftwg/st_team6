@@ -40,6 +40,20 @@ section {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	position: relative;
+}
+
+.side-img {
+	width: 30vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: var(--color-bg);
+	font-size: 30rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Scrollbar
@@ -81,7 +95,6 @@ nav ul {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding-left: 2rem;
 	position: relative;
 }
 
@@ -94,7 +107,7 @@ nav ul::before {
 	top: 0;
 	background-color: var(--color-nav);
 	z-index: 10;
-	opacity: 0.5;
+	opacity: 0.4;
 	transition: all ease 200ms;
 }
 
@@ -103,7 +116,10 @@ nav a {
 	position: relative;
 	color: var(--color-nav);
 	opacity: 0.4;
-	padding: 1.5rem 0;
+	padding: 1.5rem;
+	width: 100%;
+	height: 100%;
+	padding-left: 2rem;
 }
 
 .link--active {
@@ -116,9 +132,8 @@ nav a {
 	height: 100%;
 	width: 5px;
 	position: absolute;
-	left: -2rem;
-	top: 50%;
-	transform: translateY(-50%);
+	left: 0;
+	top: 0;
 	background-color: var(--color-nav);
 	z-index: 10;
 	opacity: 1;
@@ -182,19 +197,89 @@ nav a {
 ====================*/
 
 #mission {
-	background-color: #666866;
+	background-color: var(--color-bg);
+}
+
+#mission .side-img {
+	background: linear-gradient(to bottom, rgb(43, 71, 79, 0.4), rgba(43, 71, 79, 0.7)), url('../img/bg4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#mission i {
+	background-image: url('../img/bg4.jpg');
+	background-attachment: fixed;
+	background-size: contain;
+	background-position: center center;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.mission-content {
+	width: 70vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 15rem;
+}
+
+.mission-title {
+	font-family: var(--font-sub);
+	color: var(--color-nav);
+	font-size: 5rem;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.mission-title::after {
+	content: '';
+	display: block;
+	width: 70px;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 3px;
+	background-color: #928275;
+}
+
+.mission-p {
+	font-family: var(--font-main);
+	color: var(--color-nav);
+	opacity: 0.9;
+	font-weight: 300;
+	font-size: 1.3rem;
+	padding-left: 3px;
+	margin-top: 10px;
+	line-height: 1.3em;
 }
 
 /* Idea Section
 ====================*/
 
 #idea {
-	background-color: #2b474f;
+	background-color: var(--color-bg);
 }
 
 /* Service Section
 ====================*/
 
 #service {
-	background-color: #666866;
+	background-color: #2a2a2a;
+}
+
+.service-wrapper {
+	width: 60vw;
+	height: 100vh;
+	margin: 0 auto;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contacts {
+	padding
 }
