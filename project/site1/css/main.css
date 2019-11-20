@@ -209,7 +209,6 @@ nav a {
 
 #mission i {
 	background-image: url('../img/bg4.jpg');
-	background-attachment: fixed;
 	background-size: contain;
 	background-position: center center;
 	-webkit-text-fill-color: transparent;
@@ -260,6 +259,33 @@ nav a {
 
 #idea {
 	background-color: var(--color-bg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.idea-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 65vw;
+	max-width: 70vw;
+	margin: 0 auto;
+}
+
+.idea-p {
+	width: 25vw;
+	font-size: 1.5rem;
+	font-family: var(--font-main);
+	color: var(--color-main);
+	font-weight: 300;
+}
+
+.idea-wrapper img {
+	width: 33vw;
+	min-width: 400px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* Service Section
@@ -269,17 +295,62 @@ nav a {
 	background-color: #2a2a2a;
 }
 
-.service-wrapper {
-	width: 60vw;
+.service-container {
+	width: 100vw;
 	height: 100vh;
-	margin: 0 auto;
-	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 
+.service-title {
+	font-family: var(--font-sub);
+	font-size: 5rem;
+	color: var(--color-main);
+	margin-bottom: 3rem;
+	position: relative;
+}
+
+.service-title::after {
+	content: '';
+	display: block;
+	width: 70px;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #928275;
+}
+
+.service-wrapper {
+	min-width: 66vw;
+	margin: 0 auto;
+	color: var(--color-main);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--font-main);
+	font-weight: 300;
+	opacity: 0.65;
+}
+
 .contacts {
-	padding
+	padding: 1.5rem 3rem;
+	border: 2px solid var(--color-main);
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.3rem;
+}
+
+.contact-title {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.contact-email,
+.contact-cell {
+	list-style-type: circle;
 }
