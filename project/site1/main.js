@@ -11,7 +11,6 @@ const removeHoverEffect = (elmnt) => {
 };
 
 const changeClass = (elmnt) => {
-	const links = document.querySelectorAll('nav ul a');
 	for (let i = 0; i < links.length; i++) {
 		links[i].classList.remove('link--active');
 		links[i].dataset.active = 'false';
@@ -21,9 +20,53 @@ const changeClass = (elmnt) => {
 	elmnt.dataset.active = 'true';
 };
 
+const slide1 = document.querySelector('#hero-section');
+const slide2 = document.querySelector('#mission');
+const slide3 = document.querySelector('#idea');
+const slide4 = document.querySelector('#service');
+const wrapper = document.querySelector('.wrapper');
+const links = document.querySelectorAll('nav a');
+
+const changeSlide = (direction) => {
+	currentSlide += direction;
+
+	if (currentSlide < 1) currentSlide = 1;
+	if (currentSlide > 4) currentSlide = 4;
+
+	console.log(currentSlide);
+
+	if (currentSlide === 1) {
+		wrapper.scrollTo(0, slide1.offsetTop);
+		changeClass(links[0]);
+	} else if (currentSlide === 2) {
+		wrapper.scrollTo(0, slide2.offsetTop);
+		changeClass(links[1]);
+	} else if (currentSlide === 3) {
+		wrapper.scrollTo(0, slide3.offsetTop);
+		changeClass(links[2]);
+	} else if (currentSlide === 4) {
+		wrapper.scrollTo(0, slide4.offsetTop);
+		changeClass(links[3]);
+	}
+};
+
 // JQUERY
 
+let currentSlide = 1;
+
 $(() => {
+	$(this).keydown((e) => {
+		if (e.keyCode == 38) {
+			changeSlide(-1);
+			console.log('up');
+		}
+
+		if (e.keyCode == 40) {
+			changeSlide(1);
+			console.log('down');
+		}
+	});
+
 	$('.hero-pic').fadeIn(1000);
 
 	$('header').delay(100).animate({
