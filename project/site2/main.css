@@ -1,0 +1,60 @@
+/* Initialize
+========================= */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--font-main: 'Oswald', sans-serif;
+	--font-sub: 'Cabin', cursive;
+
+	--color-nav: #d66165;
+	--color-bg: #c95b5e;
+	-color-btn: #984a4b;
+}
+
+/* Nav bar
+========================= */
+
+header {
+	height: 64px;
+	width: 100vw;
+	display: block;
+	background-color: var(--color-nav);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-links,
+.nav-links:visited {
+	font-family: var(--font-sub);
+	color: #fff;
+	opacity: 0.6;
+	text-decoration: none;
+	margin-right: 35px;
+	font-size: 24px;
+}
+
+.nav-links:last-of-type,
+.nav-links:last-of-type:visited {
+	margin-right: 0;
+}
+
+.nav-links--active {
+	opacity: 1;
+}
+
+/* Container
+========================= */
