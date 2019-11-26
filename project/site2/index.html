@@ -13,10 +13,10 @@
 <body>
     <header>
         <nav>
-            <a href="#section-home" class="nav-links nav-links--active">HOME</a>
-            <a href="#section-mission" class="nav-links">OUR MISSION</a>
-            <a href="#section-idea" class="nav-links">IDEA</a>
-            <a href="#section-contact" class="nav-links">CONTACT</a>
+            <button class="nav-links nav-links--active" onclick="changeClass(this); changeSlide(1)">HOME</button>
+            <button class="nav-links" onclick="changeClass(this); changeSlide(2)">OUR MISSION</button>
+            <button class="nav-links" onclick="changeClass(this); changeSlide(3)">IDEA</button>
+            <button class="nav-links" onclick="changeClass(this); changeSlide(4)">CONTACT</button>
         </nav>
     </header>
 
@@ -25,12 +25,12 @@
         <!-- Home -->
         <section class="container" id="section-home">
             <div class="container__wrapper">
-                <div class="content-home">
-                    <div class="content-home__info">
-                        <h1 id="home-title">Career Finder</h1>
-                        <p class="home-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="home-content">
+                    <div class="home-content__info">
+                        <h1>Career Finder</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <button>LEARN MORE</button>
+                    <button id="homeBtn" onclick="changeSlide(2)">LEARN MORE</button>
                 </div>
                 <img src="img/home.svg" alt="home.svg" id="home-SVG">
             </div>
@@ -38,18 +38,55 @@
 
         <!-- Mission -->
         <section class="container" id="section-mission">
-
+            <div class="container__wrapper">
+                <img src="img/mission.svg" alt="mission.svg">
+                <div class="contents">
+                    <h1>Our Mission</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Idea -->
         <section class="container" id="section-idea">
-
+            <div class="container__wrapper">
+                <img src="img/idea.svg" alt="idea.svg">
+                <div class="contents">
+                    <h1>Our Idea</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Contact -->
         <section class="container" id="section-contact">
+            <div class="container__wrapper">
+                <img src="img/contact.svg" alt="contact.svg">
+                <div class="contact-list">
 
-    </section>
+                    <div class="contact">
+                        <span class="contact__name">Name Name</span>
+                        <span class="contact__info"><i class="fa fa-envelope" aria-hidden="true"></i> example@gmail.com</span>
+                        <span class="contact__info"><i class="fa fa-phone" aria-hidden="true"></i> 123-456-7890</span>
+                    </div>
+
+                    <div class="contact">
+                        <span class="contact__name">Name Name</span>
+                        <span class="contact__info"><i class="fa fa-envelope" aria-hidden="true"></i> example@gmail.com</span>
+                        <span class="contact__info"><i class="fa fa-phone" aria-hidden="true"></i> 123-456-7890</span>
+                    </div>
+
+                    <div class="contact">
+                        <span class="contact__name">Name Name</span>
+                        <span class="contact__info"><i class="fa fa-envelope" aria-hidden="true"></i> example@gmail.com</span>
+                        <span class="contact__info"><i class="fa fa-phone" aria-hidden="true"></i> 123-456-7890</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
