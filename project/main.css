@@ -49,6 +49,7 @@ nav span {
 section {
 	height: calc(100vh - 64px);
 	width: calc(100vw / 1.618);
+	min-width: 800px;
 	margin: 0 auto;
 	padding: 50px;
 	display: flex;
